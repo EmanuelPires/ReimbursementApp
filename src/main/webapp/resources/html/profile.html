@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Reimbursement Application</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Employee Reimbursement</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#../html/home.html"
+                >Reimbursement Requests</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../html/login.html">Logout</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../html/submitReim.html"
+                >Submit Reimbursement</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../html/history.html"
+                >View History</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="column" id="welcome">Welcome User</div>
+      </div>
+      <div class="row">
+        <table class="table" id="reimtable">
+          <thead>
+            <tr>
+              <th scope="col">ID#</th>
+              <th scope="col">First Name</th>
+              <th scope="col">Last Name</th>
+              <th scope="col">Email</th>
+              <th scope="col">Username</th>
+            </tr>
+          </thead>
+          <tbody id="reimTableBody"></tbody>
+        </table>
+      </div>
+       <div class="mb-3">
+          <button
+            type="button"
+            class="btn btn-secondary btn-lg btn-block"
+           id="proUpdate"
+          >UPDATE PROFILE</button>
+        </div>
+    </div>
+    <script src="../js/profile.js"></script>
+  </body>
+</html>

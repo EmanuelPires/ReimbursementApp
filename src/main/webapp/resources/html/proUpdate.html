@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Update Profile</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Update Profile</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../html/profile.html"
+                >Profile</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../html/login.html">Logout</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../html/home.html">Reimbursements</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div>
+      <h1 class="text-center mb-5 mt-4">Fill All Fields Below</h1>
+    </div>
+    <div class="container">
+      <form id="reim">
+        <div class="mb-3">
+          <label for="amount" class="form-label">First Name</label>
+          <input type="text" class="form-control" id="firstName" />
+        </div>
+       
+        <div class="mb-3">
+          <label for="amount" class="form-label">Last Name</label>
+          <input type="text" class="form-control" id="lastName" />
+        </div>
+     <div class="mb-3">
+          <label for="amount" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" />
+        </div>
+        <div class="mb-3">
+          <label for="amount" class="form-label">Username</label>
+          <input type="text" class="form-control" id="username" />
+        </div>
+         <div class="mb-3">
+          <label for="amount" class="form-label">Password</label>
+          <input type="text" class="form-control" id="password" />
+        </div>
+        <div class="mb-3">
+          <input
+            type="submit"
+            class="btn btn-secondary btn-lg btn-block"
+            value="Submit"
+          />
+        </div>
+      </form>
+    </div>
+
+    <script src="../js/proUpdate.js"></script>
+  </body>
+</html>
